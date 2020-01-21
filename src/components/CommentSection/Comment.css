@@ -11,7 +11,7 @@
   width: 100%;
 }
 .comment-form input {
-  width: 100%;
+  width: 92%;
   font-size: 14px;
   padding: 10px;
   border: none;
@@ -23,4 +23,8 @@
   margin-left: 5px;
   color: black;
   font-weight: bold;
+}
+
+form {
+  max-width: ;
 }
