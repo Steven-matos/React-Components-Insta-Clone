@@ -1,6 +1,9 @@
 import React from 'react';
 
 const LikeSection = props => {
+
+  console.log("this is likes section", props)
+
   return (
     <div>
     <div
@@ -8,15 +11,15 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart" />
+          <i onClick={() => { props.raiseLikes() }} className="btn far fa-heart" />
       </div>
       <div className="like-section-wrapper">
-        <i className="far fa-comment" />
+        <i className="btn far fa-comment" />
       </div>
     </div>
     <p className="like-number">
       
-      likes</p>
+     {props.like} likes</p>
 </div>
   )
 };
